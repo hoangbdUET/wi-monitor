@@ -4,13 +4,15 @@ const http = require('http');
 const config = require('config');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const path = require('path');
 app.use(cors());
 app.use(bodyParser.json());
 
 let responseTimeRouter = require('./api/response_times');
 
+app.use('/', express.static(path.join(__dirname, '/public')));
 app.use((req, res, next) => {
-    console.log(req.path);
+    // console.log(req.path);
     next();
 });
 app.use('/', responseTimeRouter);
