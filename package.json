@@ -1,0 +1,26 @@
+{
+  "name": "wi-monitor",
+  "version": "1.0.0",
+  "description": "I2G's Monitoring Service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoangbdUET/wi-monitor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoangbdUET/wi-monitor/issues"
+  },
+  "homepage": "https://github.com/hoangbdUET/wi-monitor#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "config": "^1.30.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "influx": "^5.0.7"
+  }
+}

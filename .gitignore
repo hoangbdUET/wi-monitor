@@ -1,2 +1,6 @@
 
 /.idea/
+/node_modules/
+/config/production.json
+/package-lock.json
+package-lock.json
