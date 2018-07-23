@@ -8,5 +8,8 @@
     "username": "root",
     "password": "root",
     "database": "wi_backend"
+  },
+  "service": {
+    "authenticate": "http://admin.dev.i2g.cloud"
   }
 }

@@ -1,0 +1,39 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-const-assign": "warn",
+        "no-this-before-super": "warn",
+        "no-undef": "warn",
+        "no-unreachable": "warn",
+        "no-unused-vars": ["off", { "ignoreRestSiblings": true }],
+        "constructor-super": "warn",
+        "valid-typeof": "warn",
+        "no-console": "off",
+        "no-case-declarations": "off"
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+        "$": false,
+        "angular": false,
+        "d3": false,
+        "d3plus": false,
+        "toastr": false,
+        "async": false,
+        "_": false,
+        "GoldenLayout": false,
+        "Spinner": false,
+        "ResizeSensor": false
+    }
+}
