@@ -6,7 +6,7 @@ let router = express.Router();
 
 router.get('/response/count', function (req, res) {
     influx.query('select count(*) from response_times').then(result => {
-        console.log(result);
+        // console.log(result);
         res.json(result);
     }).catch(err => {
         res.send(err);
