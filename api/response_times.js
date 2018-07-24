@@ -15,7 +15,7 @@ router.get('/response/count', function (req, res) {
 
 router.get('/response/all', function (req, res) {
     let whereClause = "";
-    let days = req.querys.days || 1;
+    let days = req.query.days || 1;
     if (req.query.username) whereClause += " AND username = '" + req.query.username + "'";
     whereClause += " AND time > now() + " + days + "d";
     let query = "SELECT * FROM response_times WHERE 1=1 " + whereClause;
